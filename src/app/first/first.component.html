@@ -1,1 +1,6 @@
 <p>first works!</p>
+<div [ngStyle]="{color: config.color}">{{config.isUpperCase ? (message | uppercase) :message}}</div>
+
+<button #btn (click)="increaseCounter()">{{clickCounter}}</button>
+<button>Test</button>
+{{log}}

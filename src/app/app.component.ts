@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularproject';
+  config = {color: 'red', isUpperCase: true};
+  isComponentVisible = true;
+
+  buttonClicked(clickCounter: number): any {
+    if (clickCounter >= 15) {
+      this.isComponentVisible = false;
+    }
+    else if (clickCounter >= 10) {
+      this.title = 'Nice job';
+    }
+  }
 }
