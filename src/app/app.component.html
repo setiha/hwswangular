@@ -1,4 +1,4 @@
 <button (click)="isComponentVisible = true">Reinit</button>
 
-<app-first *ngIf="isComponentVisible" [config]="config" [message]="title" (buttonClick)="buttonClicked($event)"></app-first>
+<app-first *ngIf="isComponentVisible" [config]="config" message="{{title}}" (buttonClick)="buttonClicked($event)"></app-first>
 
